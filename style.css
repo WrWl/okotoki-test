@@ -1,0 +1,117 @@
+body{
+    background: #000;
+        color: white;
+}
+#root {
+    font-family: Arial, sans-serif;
+    
+}
+
+#loadButton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#loadButton:before{
+    content: url('./icons/search.svg');
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+#loadButton:hover {
+    background-color: #5b5555;
+}
+
+ 
+
+#searchInput {
+    
+    padding: 15px 10px 10px 10px;
+    font-size: 16px;
+    background-color: #000;
+    border: none;
+    width: 160px;
+    outline: none;
+    color: #fff;
+    padding-left: 20px;
+    border-radius: 30%;
+}
+#searchContainer::before{
+    content: url('./icons/search.svg');
+        position: relative;
+        top: 1px;
+        left: 10px;
+}
+#content {
+    overflow-y: auto;
+    max-height: 300px;
+    max-width: max-content;
+    padding: 5px 5px 10px 5px;
+    
+}
+#mainContainer{
+    border: 1px solid #5b5555;
+    
+    border-radius: 15px;
+    max-width: fit-content;
+}
+#buttonsContainer{
+   padding: 10px 5px 10px 5px;
+}
+.item {
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.item:hover {
+    background-color: #5b5555;
+}
+
+.favorite-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#favoritesContainer {
+    display: none;
+}
+
+#favoritesList {
+    padding: 20px;
+}
+
+#showFavoritesButton, #showAllCoinsButton {
+    background-color: #000;
+    color: #fff;
+    
+    border: none;
+    cursor: pointer;
+}
+
+#showFavoritesButton::before{
+    content: url('./icons/star-checked.svg');
+    position: relative;
+    top: 3px;
+    
+}
+#showFavoritesButton:hover, #showAllCoinsButton:hover {
+    background-color: #5b5555;
+}
+#content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+#content {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
